@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .top {
+        /* background-color: #002857; */
+        background-color: rgb(228, 28, 28);
+        /* display: flex;
+        justify-content: space-around;
+        align-items: center; */
+
+    }
+
+    @media screen and (max-width: 800px) {
+        .top {
+            /* padding:35px; */
+        }
+    }
+
+    .contact-1 {
+        text-decoration: none;
+    }
+
+    .contact-2 {
+        text-decoration: none;
+    }
+
+    .btn:hover {
+        background-color: red;
+        color: white;
+    }
+
+    .navbar-nav {
+        text-transform: uppercase;
+    }
+
+    .btn-outline-danger {
+        color: rgb(228, 28, 28);
+    }
+
+    .hero {
+        min-width: 100% !important;
+
+        background-image: url('./a22217.jpg');
+        min-height: 650px;
+        /* min-width: 50%; */
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+        /* background-position-y: -150px; */
+        /* position: relative; */
+    }
+
+    .wl-txt {
+        color: white;
+        text-shadow: 0px 0px 1px black;
+        transform: translate(240px, 100px);
+
+    }
+
+    .wl-txt-2 {
+        text-shadow: 0px 0px 1px black;
+        color: white;
+        transform: translate(140px, 80px);
+
+    }
+
+    .wl-txt-3 {
+        text-shadow: 0px 0px 1px black;
+        color: white;
+        transform: translate(190px, 60px);
+
+        font-size: 35px;
+    }
+
+    @media screen and (max-width: 800px) {
+        .wl-txt {
+
+            transform: translate(30px, 100px);
+
+        }
+
+        .wl-txt-2 {
+
+            transform: translate(30px, 100px);
+
+        }
+
+        .wl-txt-3 {
+
+            transform: translate(30px, 100px);
+
+            font-size: 35px;
+        }
+    }
+
+
+
+    .values {
+        /* position: absolute;
+        margin: auto;
+        top: 700px;
+        left: 150px; */
+        width: 80%;
+        margin: auto;
+        background-color: rgb(250, 246, 246);
+        transform: translateY(-80px);
+    }
+
+    .fa-book {
+        font-size: 150px;
+        color: red;
+    }
+
+    .online-img {
+        display: block;
+        width: 50%;
+        margin: auto;
+    }
+
+    .about {
+        max-width: 80%;
+        margin: auto;
+    }
+
+    .about-img {
+        /* box-shadow: 0px 0px 2px black; */
+        /* border: 2px solid black; */
+        filter: drop-shadow(0px 0px 2px black);
+    }
+
+    .red {
+        font-size: 5px;
+        background-color: red;
+        color: red;
+    }
+
+    .read-btn {
+        background-color: red;
+    }
+
+    .cards {
+        max-width: 90%;
+        margin: auto;
+    }
+
+    .card-shadow {
+        box-shadow: 10px 10px 5px gray;
+    }
+
+    .gray {
+        background-color: rgb(250, 246, 246);
+    }
+
+    .empty {
+        min-height: 50px;
+    }
+
+    .bg-img {
+        background-color: #2b2d42;
+    }
+
+    .num {
+        color: red;
+    }
+
+    .box-1 {
+        background-color: rgba(255, 0, 0, 0.4);
+        transition: 0.7s ease-in-out;
+    }
+
+    .box-2 {
+        background-color: rgba(255, 0, 0, 0.4);
+        transition: 0.7s ease-in-out;
+    }
+
+    .box-3 {
+        background-color: rgba(255, 0, 0, 0.4);
+        transition: 0.7s ease-in-out;
+    }
+
+    .strip {
+        background-color: #f99d1c;
+    }
+
+    .box-img {
+        height: 650px;
+    }
+
+    .review-1 {
+        max-height: 450px;
+        background-color: rgb(228, 28, 28);
+        color: white;
+    }
+
+    #imgfix {
+        background-image: url('./d5.png');
+        min-height: 700px;
+        background-size: cover;
+        z-index: 2;
+    }
+
+    .review-2 {
+        background-color: #2b2d42;
+    }
+
+    .review-2-img {
+        width: 200px;
+    }
+
+    .car-1 {
+        max-width: 90%;
+        margin: auto;
+    }
+
+    .h4,
+    .h5 {
+        color: rgb(228, 28, 28);
+    }
+
+    .subscribe {
+        background-color: #2b2d42;
+    }
+
+    .subscribe>div>h1 {
+        color: rgb(228, 28, 28);
+    }
+
+    .outer>div>a {
+        text-decoration: none;
+    }
+
+    .outer>div>a:hover {
+        text-decoration: underline;
+        text-decoration-color: rgb(228, 28, 28);
+    }
+
+    .copy {
+        background-color: rgb(228, 28, 28);
+    }
+
+    #newimg {
+        width: 100%;
+        height: 500px;
+    }
+
+    .card-btn {
+        background-color: rgb(228, 28, 28);
+        color: white;
+    }
+
+    .cb {
+        background-color: #2b2d42;
+    }
+
+    .rd {
+        color: rgb(228, 28, 28);
+    }
+
+    .shadow {
+        /* box-shadow: 10px 10px 5px black; */
+    }
+</style>
+
+<body>
+    <div class="top container-fluid row ">
+        <span class="contact col-12 col-lg-6 d-flex justify-content-center align-items-center">
+            <a class="contact-1 text-light" href=""><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;+91 77200 50066</a>
+            <a class="contact-2 text-light ms-3" href=""><i class="fa-solid fa-envelope"
+                    id="email"></i>&nbsp;&nbsp;info@ciitclasses.org</a>
+        </span>
+        <span class="socials col-12 col-lg-6 d-flex justify-content-center align-items-center">
+            <a href=""><button class="btn text-light"><i class="fa-brands fa-facebook"></i></button></a>
+            <a href=""><button class="btn text-light"><i class="fa-brands fa-twitter"></i></button></a>
+            <a href=""><button class="btn text-light"><i class="fa-brands fa-instagram"></i></button></a>
+            <a href=""><button class="btn text-light"><i class="fa-brands fa-telegram"></i></button></a>
+        </span>
+    </div>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img class="img-fluid ms-2" src="images.png" width="80px" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                    <li class="nav-item fs-5">
+                        <a class="nav-link active text-danger" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item ms-4 fs-5">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item ms-4 fs-5">
+                        <a class="nav-link" href="#">Events</a>
+                    </li>
+                    <li class="nav-item ms-4 fs-5">
+                        <a class="nav-link" href="#">courses</a>
+                    </li>
+                    <li class="nav-item ms-4 fs-5">
+                        <a class="nav-link" href="#">Results</a>
+                    </li>
+                    <li class="nav-item ms-4 fs-5">
+                        <a class="nav-link" href="#">latest news</a>
+                    </li>
+                    <li class="nav-item ms-4 fs-5">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                    <form class="d-flex ms-4" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Enter a course name"
+                            aria-label="Search">
+                        <button class="btn btn-outline-danger" type="submit">Search</button>
+                    </form>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container hero ">
+        <span class="wl-txt display-4 fw-normal row">Welcome to </span> <br>
+        <span class="wl-txt-2 display-2 fw-normal row">CIIT Classes Jammu</span> <br>
+        <span class="wl-txt-3 fw-normal row">-Jammu's No.1 Computer Institution</span>
+    </div>
+    <div class="container-fluid ">
+        <div class="values row">
+            <div class=" col-sm-12 col-md-12 col-lg-4 col-xl-4 online">
+                <span class="online-img"><img class="img-fluid dp" src="./images.png" alt=""></span>
+                <span class="online-txt">
+                    <h3 class="text-center ">Online Courses</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia ducimus, eligendi excepturi,
+                        cupiditate voluptatem asperiores blanditiis natus dolorum vel, dolor doloremque repellendus
+                        ipsum
+                        reiciendis dicta!</p>
+                </span>
+            </div>
+            <div class=" col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                <span class="online-img"><img class="img-fluid dp" src="./images.png" alt=""></span>
+                <span class="online-txt">
+                    <h3 class="text-center ">Our Library</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia ducimus, eligendi excepturi,
+                        cupiditate voluptatem asperiores blanditiis natus dolorum vel, dolor doloremque repellendus
+                        ipsum
+                        reiciendis dicta!</p>
+                </span>
+            </div>
+
+            <div class=" col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                <span class="online-img"><img class="img-fluid dp" src="./images.png" alt=""></span>
+                <span class="online-txt">
+                    <h3 class="text-center h3 ">Our faculty</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia ducimus, eligendi excepturi,
+                        cupiditate voluptatem asperiores blanditiis natus dolorum vel, dolor doloremque repellendus
+                        ipsum
+                        reiciendis dicta!</p>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid ">
+        <div class="about row p-2">
+            <!-- <div class=""> -->
+            <img class="img-fluid about-img col-12 col-xl-5 m-auto" src="./d1.png" alt="">
+            <!-- </div> -->
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-7">
+                <span class="head ">
+                    <h5 class="h5 fs-4 fw-normal"> About Us </h5>
+                </span>
+                <h1 class="display-5 fw-semibold">
+                    Welcome to our Coaching Institute
+                </h1>
+                <span class="red">
+                    -------------------
+                </span>
+                <p class="mt-5">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum sapiente enim quod dignissimos
+                    dicta quam maxime. Facilis mollitia ratione qui. Laudantium vero reprehenderit id voluptate, alias
+                    minima quo tempora at culpa, aperiam corrupti consectetur et fugiat placeat, porro facilis. Alias
+                    maxime expedita voluptatum quaerat sunt unde odio quod tempora, magnam, repellendus dolorum atque
+                    quis beatae. Autem eius harum repellat consequuntur assumenda. Alias maxime expedita
+                </p>
+                <button class="btn read-btn mt-3">Read more</button>
+            </div>
+        </div>
+    </div>
+    <div class="empty">
+
+    </div>
+    <div class="container-fluid gray ">
+        <h4 class="h4 text-center fw-semibold mt-5 pt-5">You Can Learn It</h4>
+        <h1 class="h1 text-center fw-semibold mt-4">Popular Courses</h1>
+        <div class="row cards mt-5">
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-4 mt-2">
+                <div class="card card-shadow m-auto" style="width: 22rem;">
+                    <img src="./d2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="h3 fw-semibold rd">XI/XII Board</h3>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-4 mt-2">
+                <div class="card card-shadow m-auto" style="width: 22rem;">
+                    <img src="./d3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="h3 fw-semibold rd">CBSE</h3>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-4 mt-2">
+                <div class="card card-shadow m-auto" style="width: 22rem;">
+                    <img src="./d4.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="h3 fw-semibold rd">JK-CET</h3>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <button class="btn read-btn mt-5">View More</button>
+        </div>
+    </div>
+    <div class="container-fluid bg-img mt-5">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-1 col-xl-1">
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-5 col-xl-5">
+                <span class="head ">
+                    <h5 class="h5 fs-4 fw-normal mt-5 text-light"> What We Do </h5>
+                </span>
+                <h1 class="display-5 fw-semibold text-light">
+                    Our Skill
+                    <br>
+                    What We Achieved
+                </h1>
+                <span class="red">
+                    -------------------
+                </span>
+                <p class="mt-3 text-light">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quod vero sapiente obcaecati?
+                    Voluptatum, facilis? Iste aut cum autem repellendus quasi maiores
+                </p>
+                <div class="row column-gap-3 box">
+                    <div class="col-sm-12 col-md-12 col-lg-1 col-xl-1">
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3 text-light box-1 p-2 mt-2">
+                        <div class="icon text-center"><i class="fa-solid fa-graduation-cap fs-1"></i></div>
+                        <h2 class="h2 num text-center fw-semibold mt-3">257</h2>
+                        <h5 class="h6 fw-semibold text-center mt-3">
+                            SATISFIED<br>STUDENTS
+                        </h5>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3 text-light box-2 p-2 mt-2">
+                        <div class="icon text-center"><i class="fa-solid fa-graduation-cap fs-1"></i></div>
+                        <h2 class="h2 num text-center fw-semibold mt-3">257</h2>
+                        <h5 class="h6 fw-semibold text-center mt-3">
+                            QUALIFIED <br>TEACHERS
+                        </h5>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3 text-light box-3 p-2 mt-2">
+                        <div class="icon text-center"><i class="fa-solid fa-graduation-cap fs-1"></i></div>
+                        <h2 class="h2 num text-center fw-semibold mt-3">243</h2>
+                        <h5 class="h6 fw-semibold text-center mt-3">HONOR & AWARDS WIN
+                        </h5>
+                    </div>
+                </div>
+                <div class="row py-4 strip mt-5">
+                    <div class="col-12 text-light">
+                        <h2 class="h5 fw-semibold"> Lorem ipsum dolor sit amet </h6> consectetur adipisicing elit. Natus
+                            cum eum modi vel explicabo! Iusto nemo aliquid eius distinctio veniam!
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-12 col-lg-5 col-xl-5 mt-5" id="imgfix">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid teachers ">
+        <h4 class="h4 text-center fw-semibold mt-5 pt-5">You Can Learn</h4>
+        <h1 class="h1 text-center fw-semibold mt-4">Our Expertise Teachers</h1>
+        <!-- CAROUSEL -->
+        <div id="carouselExample" class="carousel car-1 slide mt-5 ">
+            <div class="carousel-inner">
+                <div class="carousel-item active ">
+                    <div class="d-flex row">
+                        <div class="card col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-3 m-auto mt-4"
+                            style="width: 18rem;">
+                            <img src="./d8.png" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body cb row">
+                                <div class="col-8">
+                                    <h5 class="h5">Dr. Manish Y</h5>
+                                    <p class="text-light">Physics Teacher</p>
+                                </div>
+                                <div class="col-4">
+                                    <button class="btn card-btn">View Details</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-3 m-auto mt-4"
+                            style="width: 18rem;">
+                            <img src="./d6.png" class="card-img-top" alt="...">
+                            <div class="card-body cb row">
+                                <div class="col-8 ">
+                                    <h5 class="h5">Miss. Varsha</h5>
+                                    <p class="text-light">Maths Teacher</p>
+                                </div>
+                                <div class="col-4">
+                                    <button class="btn card-btn">View Details</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-3 m-auto mt-4"
+                            style="width: 18rem;">
+                            <img src="./d9.png" class="card-img-top" alt="...">
+                            <div class="card-body cb row">
+                                <div class="col-8 ">
+                                    <h5 class="h5">Dr. Krishna T</h5>
+                                    <p class="text-light">Chemistry Teacher</p>
+                                </div>
+                                <div class="col-4">
+                                    <button class="btn card-btn">View Details</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-3 m-auto mt-4"
+                            style="width: 18rem;">
+                            <img src="./d7.png" class="card-img-top" alt="...">
+                            <div class="card-body cb row">
+                                <div class="col-7 ">
+                                    <h5 class="h5">Mrs. Shikha B</h5>
+                                    <p class="text-light">Biology Teacher</p>
+                                </div>
+                                <div class="col-5">
+                                    <button class="btn card-btn">View Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex row">
+                        <div class="card col-sm-12 col-md-6 col-lg-6 col-xl-3 m-auto mt-4" style="width: 18rem;">
+                            <img src="./d8.png" class="card-img-top" alt="...">
+                            <div class="card-body cb row">
+                                <div class="col-8 ">
+                                    <h5 class="h5">Mr. Anil k</h5>
+                                    <p class="text-light">Python Teacher</p>
+                                </div>
+                                <div class="col-4">
+                                    <button class="btn card-btn">View Details</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card col-sm-12 col-md-6 col-lg-6 col-xl-3 m-auto mt-4" style="width: 18rem;">
+                            <img src="./d6.png" class="card-img-top" alt="...">
+                            <div class="card-body cb row">
+                                <div class="col-8 ">
+                                    <h5 class="h5">Miss. Sushmita</h5>
+                                    <p class="text-light">Accounts Teacher</p>
+                                </div>
+                                <div class="col-4">
+                                    <button class="btn card-btn">View Details</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card col-sm-12 col-md-6 col-lg-6 col-xl-3 m-auto mt-4" style="width: 18rem;">
+                            <img src="./d9.png" class="card-img-top" alt="...">
+                            <div class="card-body cb row">
+                                <div class="col-8 ">
+                                    <h5 class="h5">Dr. Harnek S</h5>
+                                    <p class="text-light">History Teacher</p>
+                                </div>
+                                <div class="col-4">
+                                    <button class="btn card-btn">View Details</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card col-sm-12 col-md-6 col-lg-6 col-xl-3 m-auto mt-4" style="width: 18rem;">
+                            <img src="./d7.png" class="card-img-top" alt="...">
+                            <div class="card-body cb row">
+                                <div class="col-8 ">
+                                    <h5 class="h5">Dr. Renu V</h5>
+                                    <p class="text-light">Sociology Teacher</p>
+                                </div>
+                                <div class="col-4">
+                                    <button class="btn card-btn">View Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="d-flex row">
+                        <div class="card card col-sm-12 col-md-6 col-lg-6 col-xl-3 m-auto mt-4" style="width: 18rem;">
+                            <img src="./d8.png" class="card-img-top" alt="...">
+                            <div class="card-body cb row">
+                                <div class="col-8">
+                                    <h5 class="h5">Dr. Manish Y</h5>
+                                    <p class="text-light">Physics Teacher</p>
+                                </div>
+                                <div class="col-4">
+                                    <button class="btn card-btn">View Details</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card col-sm-12 col-md-6 col-lg-6 col-xl-3 m-auto mt-4" style="width: 18rem;">
+                            <img src="./d6.png" class="card-img-top" alt="...">
+                            <div class="card-body cb row">
+                                <div class="col-8 ">
+                                    <h5 class="h5">Miss. Varsha</h5>
+                                    <p class="text-light">Maths Teacher</p>
+                                </div>
+                                <div class="col-4">
+                                    <button class="btn card-btn">View Details</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card col-sm-12 col-md-6 col-lg-6 col-xl-3 m-auto mt-4" style="width: 18rem;">
+                            <img src="./d9.png" class="card-img-top" alt="...">
+                            <div class="card-body cb row">
+                                <div class="col-8 ">
+                                    <h5 class="h5">Dr. Krishna T</h5>
+                                    <p class="text-light">Chemistry Teacher</p>
+                                </div>
+                                <div class="col-4">
+                                    <button class="btn card-btn">View Details</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card col-sm-12 col-md-6 col-lg-6 col-xl-3 m-auto mt-4" style="width: 18rem;">
+                            <img src="./d7.png" class="card-img-top" alt="...">
+                            <div class="card-body cb row">
+                                <div class="col-7 ">
+                                    <h5 class="h5">Mrs. Shikha B</h5>
+                                    <p class="text-light">Biology Teacher</p>
+                                </div>
+                                <div class="col-5">
+                                    <button class="btn card-btn">View Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center p-4">
+            <button class="btn card-btn mx-2" data-bs-target="#carouselExample" data-bs-slide="prev">&lt;</button>
+            <button class="btn card-btn" data-bs-target="#carouselExample" data-bs-slide="next">&gt;</button>
+        </div>
+    </div>
+    <div class="container-fluid mt-5">
+        <div class="reviews row">
+            <div
+                class="col-sm-12 col-md-12 col-lg-6 review-1 d-flex flex-column justify-content-center align-items-center">
+                <h5 class="h5 fs-4 fw-normal"> Our Students </h5>
+                <h1 class="display-5 fw-semibold">
+                    What Our <br>
+                    Happy Student Say
+                </h1>
+                <p class="mt-3">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-6 review-2 mt-5 p-5">
+                <div id="ourstudents" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class=" d-flex flex-column justify-content-center align-items-center ">
+                                <img class="img-fluid review-2-img"
+                                    src="./circle-profile-picture-face-person-human-clothing-transparent-png-488441.png"
+                                    alt="">
+                                <h4 class="h4 mt-5">Riya B</h4>
+                                <p class="mt-3 text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Rerum odit
+                                    inventore </p>
+                                <p class="text-light">incidunt veritatis. Expedita, dolorum?</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item ">
+                            <div class="d-flex flex-column justify-content-center align-items-center">
+                                <img class="img-fluid review-2-img"
+                                    src="./circle-profile-picture-face-person-human-clothing-transparent-png-488441.png"
+                                    alt="">
+                                <h4 class="h4 mt-5">Riya B</h4>
+                                <p class="mt-3 text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Rerum odit
+                                    inventore </p>
+                                <p class="text-light">incidunt veritatis. Expedita, dolorum?</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item ">
+                            <div class="d-flex flex-column justify-content-center align-items-center">
+                                <img class="img-fluid review-2-img"
+                                    src="./circle-profile-picture-face-person-human-clothing-transparent-png-488441.png"
+                                    alt="">
+                                <h4 class="h4 mt-5">Riya B</h4>
+                                <p class="mt-3 text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Rerum odit
+                                    inventore </p>
+                                <p class="text-light">incidunt veritatis. Expedita, dolorum?</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="d-flex justify-content-center align-items-center pt-2">
+                    <button class="btn card-btn mx-2" data-bs-target="#ourstudents" data-bs-slide="prev">Prev</button>
+                    <button class="btn card-btn" data-bs-target="#ourstudents" data-bs-slide="next">Next</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <h4 class="h4 text-center fw-semibold mt-5 pt-3">Our Articles</h4>
+        <h1 class="h1 text-center fw-semibold mt-4">Latest News</h1>
+        <!-- Carousel -->
+        <div id="blogs" class="carousel car-1 slide mt-5">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-flex row ">
+                        <div class="card col-12 col-xl-4 m-auto">
+                            <img src="./d1.png" class="card-img-top shadow" alt="...">
+                            <div class="card-body">
+                                <h5 class="h5">Lorem ipsum dolor sit amet consectetur, adipisicing elit</h5>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas dolores soluta
+                                    quo nihil iure libero eos molestias voluptatum labore! Facere mollitia
+                                    asperiores eum non labore?</p>
+                            </div>
+                        </div>
+                        <div class="card col-12 col-xl-4 m-auto">
+                            <img src="./d1.png" class="card-img-top shadow" alt="...">
+                            <div class="card-body">
+                                <h5 class="h5">Lorem ipsum dolor sit amet consectetur, adipisicing elit</h5>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas dolores soluta
+                                    quo nihil iure libero eos molestias voluptatum labore! Facere mollitia
+                                    asperiores eum non labore?</p>
+                            </div>
+                        </div>
+                        <div class="card col-12 col-xl-4 m-auto">
+                            <img src="./d1.png" class="card-img-top shadow" alt="...">
+                            <div class="card-body">
+                                <h5 class="h5">Lorem ipsum dolor sit amet consectetur, adipisicing elit</h5>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas dolores soluta
+                                    quo nihil iure libero eos molestias voluptatum labore! Facere mollitia
+                                    asperiores eum non labore?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="d-flex row">
+
+                        <div class="card col-sm-12 col-md-12 col-lg-12 col-xl-4 m-auto" style="width: 25rem;">
+                            <img src="./d1.png" class="card-img-top shadow" alt="...">
+                            <div class="card-body">
+                                <h5 class="h5">Lorem ipsum dolor sit amet consectetur, adipisicing elit</h5>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas dolores soluta
+                                    quo
+                                    nihil iure libero eos molestias voluptatum labore! Facere mollitia asperiores
+                                    eum
+                                    non
+                                    labore?</p>
+                            </div>
+                        </div>
+
+
+                        <div class="card col-sm-12 col-md-12 col-lg-12 col-xl-4 m-auto" style="width: 25rem;">
+                            <img src="./d1.png" class="card-img-top shadow" alt="...">
+                            <div class="card-body">
+                                <h5 class="h5">Lorem ipsum dolor sit amet consectetur, adipisicing elit</h5>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas dolores soluta
+                                    quo
+                                    nihil iure libero eos molestias voluptatum labore! Facere mollitia asperiores
+                                    eum
+                                    non
+                                    labore?</p>
+                            </div>
+                        </div>
+                        <div class="card col-sm-12 col-md-12 col-lg-12 col-xl-4 m-auto " style="width: 25rem;">
+                            <img src="./d1.png" class="card-img-top shadow" alt="...">
+                            <div class="card-body">
+                                <h5 class="h5">Lorem ipsum dolor sit amet consectetur, adipisicing elit</h5>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas dolores soluta
+                                    quo
+                                    nihil iure libero eos molestias voluptatum labore! Facere mollitia asperiores
+                                    eum
+                                    non
+                                    labore?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item ">
+                    <div class="d-flex row ">
+                        <div class="card col-sm-12 col-md-12 col-lg-12 col-xl-4 m-auto" style="width: 25rem;">
+                            <img src="./d1.png" class="card-img-top shadow" alt="...">
+                            <div class="card-body">
+                                <h5 class="h5">Lorem ipsum dolor sit amet consectetur, adipisicing elit</h5>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas dolores soluta
+                                    quo
+                                    nihil iure libero eos molestias voluptatum labore! Facere mollitia asperiores
+                                    eum
+                                    non
+                                    labore?</p>
+                            </div>
+                        </div>
+                        <div class="card col-sm-12 col-md-12 col-lg-12 col-xl-4 m-auto" style="width: 25rem;">
+                            <img src="./d1.png" class="card-img-top shadow" alt="...">
+                            <div class="card-body">
+                                <h5 class="h5">Lorem ipsum dolor sit amet consectetur, adipisicing elit</h5>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas dolores soluta
+                                    quo
+                                    nihil iure libero eos molestias voluptatum labore! Facere mollitia asperiores
+                                    eum
+                                    non
+                                    labore?</p>
+                            </div>
+                        </div>
+                        <div class="card col-sm-12 col-md-12 col-lg-12 col-xl-4 m-auto" style="width: 25rem;">
+                            <img src="./d1.png" class="card-img-top shadow" alt="...">
+                            <div class="card-body">
+                                <h5 class="h5">Lorem ipsum dolor sit amet consectetur, adipisicing elit</h5>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas dolores soluta
+                                    quo
+                                    nihil iure libero eos molestias voluptatum labore! Facere mollitia asperiores
+                                    eum
+                                    non
+                                    labore?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex justify-content-center align-items-center pt-4">
+        <button class="btn card-btn mx-2" data-bs-target="#blogs" data-bs-slide="prev">Prev</button>
+        <button class="btn card-btn" data-bs-target="#blogs" data-bs-slide="next">Next</button>
+    </div>
+    </div>
+    <div class="container-fluid subscribe p-5 row mt-4">
+        <div class="col-sm-12 col-md-12 col-lg-7 sub-1 px-4">
+            <h1 class="h1  fw-semibold mt-4">Subscribe Our Newsletter</h1>
+            <h5 class="h5  fw-semibold mt-1 text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quod magnam incidunt delectus officiis cum reprehenderit</h5>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-5 sub-2 pt-3 mt-5">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-8 mt-3">
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="Enter Email Address Here....">
+                </div>
+                <!-- <div class=""> -->
+                <button type="submit" class="btn btn-primary col-11 col-lg-3 m-3 px-4"><i
+                        class="fa-brands fa-telegram fs-4"></i></button>
+                <!-- </div> -->
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="row outer container-fluid">
+            <div class="col-sm-12 col-md-12 col-lg-3">
+                <img src="./images.png" alt="">
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-3">
+                <h3 class="h3 text-danger fw-semibold mt-4">Address Info</h3>
+                <h6 class="h5 text-dark fw-normal mt-3 ">Lorem ipsum dolor sit , Industry-560016.</h6>
+                <h6 class="h5 text-dark fw-normal mt-3 "><i class="fa-solid fa-phone"></i>+91 77200 50066</h6>
+                <h6 class="h5 text-dark  fw-normal mt-3 "><i class="fa-solid fa-envelope"></i>&nbsp;info@ciitclasses.org
+                </h6>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-3">
+                <h3 class="h3 text-danger fw-semibold mt-4">Our Courses</h3>
+                <a href="#">
+                    <h6 class="h5 text-dark fw-normal mt-3 ">XI/XII BOARD </h6>
+                </a>
+                <a href="#">
+                    <h6 class="h5 text-dark fw-normal mt-2 ">CBSE</h6>
+                </a>
+                <a href="#">
+                    <h6 class="h5 text-dark fw-normal mt-2 ">JK-CET</h6>
+                </a>
+                <a href="#">
+                    <h6 class="h5 text-dark fw-normal mt-2 ">JEE ADV</h6>
+                </a>
+                <a href="#">
+                    <h6 class="h5 text-dark fw-normal mt-2 ">JEE MAIN</h6>
+                </a>
+                <a href="#">
+                    <h6 class="h5 text-dark fw-normal mt-2 ">NEET/AIIMS</h6>
+                </a>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-3">
+                <h3 class="h3 text-danger  fw-semibold mt-4">Useful Links</h3>
+                <a href="#">
+                    <h6 class="h5 text-dark fw-normal mt-3 ">About Us</h6>
+                </a>
+                <a href="#">
+                    <h6 class="h5 text-dark  fw-normal mt-2 ">Courses</h6>
+                </a>
+                <a href="#">
+                    <h6 class="h5 text-dark fw-normal mt-2 ">Results</h6>
+                </a>
+                <a href="#">
+                    <h6 class="h5 text-dark fw-normal mt-2 ">Events</h6>
+                </a>
+                <a href="#">
+                    <h6 class="h5 text-dark fw-normal mt-2 ">Contact</h6>
+                </a>
+            </div>
+        </div>
+        <div class="copy row p-4 mt-4">
+            <div class="col-6">
+                <h6 class="h5 text-light text-center fw-normal mt-2 ">Copyright &copy; 2024 || Developed by VIPUL
+                </h6>
+            </div>
+            <div class="col-6">
+                <span class="socials d-flex justify-content-center">
+                    <a href=""><button class="btn"><i class="fa-brands fa-facebook fs-2"></i></button></a>
+                    <a href=""><button class="btn"><i class="fa-brands fa-twitter fs-2"></i></button></a>
+                    <a href=""><button class="btn"><i class="fa-brands fa-instagram fs-2"></i></button></a>
+                    <a href=""><button class="btn"><i class="fa-brands fa-telegram fs-2"></i></button></a>
+                </span>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>
